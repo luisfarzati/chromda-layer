@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "chromda-layer",
+  "description": "Lambda layer for chromda",
+  "author": "Luis Farzati <lfarzati@gmail.com>",
+  "version": "1.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "aws-xray-sdk": "2.5.0",
+    "uuid": "3.3.3",
+    "mrpuppetshot": "1.0.1"
+  },
+  "scripts": {
+    "clean": "rm -rf nodejs",
+    "preinstall": "npm run clean",
+    "postinstall": "mkdir -p nodejs && mv node_modules nodejs"
+  }
+}
